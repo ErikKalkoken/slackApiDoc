@@ -6,7 +6,8 @@ Argument|Example|Required|Description
 --------|-------|--------|-----------
 `token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
 `file`|`F12345678`|Required|ID of the file to be edited
-`title`|`Brand new title`|Optional|New title of the file
+`title`|`Brand new title`|Required|New title of the file
+`filetype`|`text`|Optional|New filetype of the file. See [file object](https://api.slack.com/types/file#file_types) for a list of all supported types.
 ##Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.
 

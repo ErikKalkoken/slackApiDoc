@@ -9,9 +9,12 @@ Argument|Example|Required|Description
 `user`|`U1234567890`|Required|ID of user who's profile will be changed
 `profile`|`{"first_name": "John"}`|Required|Subset of a user profile with elements to be changed as string in JSON format. See [user](https://api.slack.com/types/user) for a definition of all elements in a profile. Make sure to URL-encode it if you use GET.
 
-Note that not all elements of a profile can be changed this way. These elements are reported to work:
+Note that not all attributes of a profile can be changed this way. These attributes can be changed:
 - `first_name`
 - `last_name`
+- `title`
+- `phone`
+- `skype`
 
 ##Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.

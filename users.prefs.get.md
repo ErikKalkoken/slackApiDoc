@@ -5,7 +5,7 @@ This method has the URL `https://slack.com/api/users.prefs.gett` and follows the
 Argument|Example|Required|Description
 --------|-------|--------|-----------
 `token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
-`
+
 ##Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.
 

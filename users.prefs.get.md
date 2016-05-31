@@ -1,5 +1,5 @@
 # users.prefs.get
-This method returns the preference setting for the current user
+This method returns the preference setting for the owner of the provided token.
 This method has the URL `https://slack.com/api/users.prefs.gett` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description

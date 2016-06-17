@@ -5,7 +5,7 @@ This method has the URL `https://slack.com/api/users.profile.set` and follows th
 
 Argument|Example|Required|Description
 --------|-------|--------|-----------
-`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
+`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: users.profile:write)
 `user`|`U1234567890`|Required|ID of user who's profile will be changed
 `profile`|`{"first_name": "John"}`|Required|Subset of a user profile with elements to be changed as string in JSON format. See [user](https://api.slack.com/types/user) for a definition of all elements in a profile. Make sure to URL-encode it if you use GET.
 

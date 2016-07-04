@@ -22,5 +22,6 @@ ok: true
 ##Errors & Warnings
 Error|Description
 --------|-------
-`user_already_invited`|User has already received an email invitation
+`already_invited`|User has already received an email invitation
+`already_in_team`|User is already part of the team
 tbd

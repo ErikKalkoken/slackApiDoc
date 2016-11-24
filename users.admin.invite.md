@@ -26,4 +26,5 @@ Error|Description
 `already_invited`|User has already received an email invitation
 `already_in_team`|User is already part of the team
 `sent_recently`|When using resend=true, the email has been sent recently already
+`user_disabled`|User account has been deactivated
 tbd

@@ -20,4 +20,4 @@ ok: true
 ##Errors & Warnings
 Error|Description
 --------|-------
-tbd
+paid_only|Error message when used with a free Slack team

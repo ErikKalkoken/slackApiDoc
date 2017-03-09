@@ -10,7 +10,7 @@ Argument|Example|Required|Description
 `text`|`xxxx-xxxxxxxxx-xxxx`|Optional|Additional parameters provided to the slash command
 
 ##Response
-You will receipe a response in JSON indicating if the command has been executed successfully or not with the `ok` variable. 
+You will receive a response in JSON indicating if the command has been executed successfully or not with the `ok` variable. 
 For some internal commands (e.g. `/who`) the response of the slash command will be provided in the `response` variable. For most slash commands  the response will instead be produced in the channel on Slack.
 
 ```json

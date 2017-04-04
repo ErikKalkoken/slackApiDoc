@@ -28,4 +28,5 @@ Error|Description
 `sent_recently`|When using resend=true, the email has been sent recently already
 `user_disabled`|User account has been deactivated
 `missing_scope`|Using an access_token not authorized for `'client'` scope
+`invalid_email`|Invalid email address (e.g. "qwe")
 tbd

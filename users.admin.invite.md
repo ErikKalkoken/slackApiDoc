@@ -1,6 +1,6 @@
 # users.admin.invite
 This method sends invitation to a new user by email
-##Arguments
+## Arguments
 This method has the URL `https://slack.com/api/users.admin.invite` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description
@@ -12,7 +12,7 @@ first_name|John|Optional|Prefilled input for the "First name" field on the "new 
 last_name|Doe|Optional|Prefilled input for the "Last name" field on the "new user registration" page.
 resend|true|Optional|Resend the invitation email if the user has already been invited and the email was sent some time ago.
 
-##Response
+## Response
 You will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). For example if successful you get:
 
 ```json
@@ -20,7 +20,7 @@ You will receive a standard Slack API response in JSON as described [here](https
 ok: true
 }
 ```
-##Errors & Warnings
+## Errors & Warnings
 Error|Description
 --------|-------
 `already_invited`|User has already received an email invitation

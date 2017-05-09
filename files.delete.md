@@ -13,7 +13,7 @@ You will receive a standard Slack API response in JSON. If successful you get:
 
 ```json
 {
-ok: true
+"ok": true
 }
 ```
 ##Errors & Warnings

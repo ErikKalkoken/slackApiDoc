@@ -1,5 +1,6 @@
 # users.admin.invite
 This method sends invitation to a new user by email
+
 ## Arguments
 This method has the URL `https://slack.com/api/users.admin.invite` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
@@ -20,6 +21,7 @@ You will receive a standard Slack API response in JSON as described [here](https
 	"ok": true
 }
 ```
+
 ## Errors & Warnings
 Error|Description
 --------|-------

@@ -8,7 +8,7 @@ Argument|Example|Required|Description
 `file`|`F12345678`|Required|ID of the file to be edited
 `title`|`Brand new title`|Required|New title of the file
 `filetype`|`text`|Optional|New filetype of the file. See [file object](https://api.slack.com/types/file#file_types) for a list of all supported types.
-##Response
+## Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.
 
 ```json
@@ -57,8 +57,10 @@ If successful you will receive the updates [file object](https://api.slack.com/t
 	"comments_count": 0
 }
 ```
+
+## Errors & Warnings
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). 
-##Errors & Warnings
+
 Error|Description
 --------|-------
-tbd
+tbd|tbd

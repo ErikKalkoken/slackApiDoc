@@ -6,7 +6,7 @@ Argument|Example|Required|Description
 --------|-------|--------|-----------
 `token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
 
-##Response
+## Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.
 
 ```json
@@ -260,8 +260,9 @@ If successful you will receive the updates [file object](https://api.slack.com/t
 	}
 }
 ```
+
+## Errors & Warnings
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics).
-##Errors & Warnings
 Error|Description
 --------|-------
 tbd

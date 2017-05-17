@@ -1,6 +1,6 @@
 # users.profile.set
 This method changes the profile of a user. e.g. it allows to change the first and last name
-##Arguments
+## Arguments
 This method has the URL `https://slack.com/api/users.profile.set` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description
@@ -16,7 +16,7 @@ Note that not all attributes of a profile can be changed this way. These attribu
 - `phone`
 - `skype`
 
-##Response
+## Response
 If successful you will receive the updates [file object](https://api.slack.com/types/file) as JSON.
 
 ```json
@@ -60,8 +60,10 @@ If successful you will receive the updates [file object](https://api.slack.com/t
 	"has_2fa": false
 }
 ```
+
+## Errors & Warnings
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics).
-##Errors & Warnings
+
 Error|Description
 --------|-------
 tbd

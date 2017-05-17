@@ -15,8 +15,8 @@ For some internal commands (e.g. `/who`) the response of the slash command will 
 
 ```json
 {
-"ok": true,
-"response": "Users here: ..."
+	"ok": true,
+	"response": "Users here: ..."
 }
 ```
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). 

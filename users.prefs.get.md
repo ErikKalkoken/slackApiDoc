@@ -263,6 +263,7 @@ If successful you will receive the updates [file object](https://api.slack.com/t
 
 ## Errors & Warnings
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics).
+
 Error|Description
 --------|-------
 tbd

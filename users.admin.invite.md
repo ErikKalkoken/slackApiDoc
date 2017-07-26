@@ -7,7 +7,7 @@ Argument|Example|Required|Description
 --------|-------|--------|-----------
 token|xxxx-xxxxxxxxx-xxxx|Required|Authentication token (Requires scope: `'client'`)
 email|john.doe@email.com|Required|Email address of the new user
-channels|C1234567890|Optional|Comma-separated list of channel IDs (not names!) which the new user will auto-join
+channels|C1234567890,G12345678|Optional|Comma-separated list of IDs (not names!) for channels, which the new user will auto-join. Both channel IDs for public channels and group IDs for private chanels work. 
 first_name|John|Optional|Prefilled input for the "First name" field on the "new user registration" page.
 last_name|Doe|Optional|Prefilled input for the "Last name" field on the "new user registration" page.
 resend|true|Optional|Resend the invitation email if the user has already been invited and the email was sent some time ago.
@@ -29,5 +29,5 @@ Error|Description
 `sent_recently`|When using resend=true, the email has been sent recently already
 `user_disabled`|User account has been deactivated
 `missing_scope`|Using an access_token not authorized for `'client'` scope
-`invalid_email`|Invalid email address (e.g. "qwe")
+`invalid_email`|Invalid email address (e.g. "qwe"). Note that Slack does not recognize some email addresses even though they are technically valid. This is a known issue.
 tbd

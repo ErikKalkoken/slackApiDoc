@@ -9,7 +9,7 @@ Argument|Example|Required|Description
 `command`|`/who`|Required|Slash command to be executed. Leading backslash is required.
 `text`|`xxxx-xxxxxxxxx-xxxx`|Optional|Additional parameters provided to the slash command
 
-##Response
+## Response
 You will receive a response in JSON indicating if the command has been executed successfully or not with the `ok` variable. 
 For some internal commands (e.g. `/who`) the response of the slash command will be provided in the `response` variable. For most slash commands  the response will instead be produced in the channel on Slack.
 
@@ -20,7 +20,10 @@ For some internal commands (e.g. `/who`) the response of the slash command will 
 }
 ```
 In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). 
-##Errors & Warnings
+
+## Errors & Warnings
 Error|Description
 --------|-------
+`missing_scope`|The method requires the scope `post`. Since this scope does not seam to be availble in the app config window you need to provide a legacy token for this to work.
+
 tbd

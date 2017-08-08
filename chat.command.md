@@ -15,15 +15,17 @@ For some internal commands (e.g. `/who`) the response of the slash command will 
 
 ```json
 {
-"ok": true,
-"response": "Users here: ..."
+	"ok": true,
+	"response": "Users here: ..."
 }
 ```
-In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). 
 
 ## Errors & Warnings
+In case of errors you will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). 
+
 Error|Description
 --------|-------
 `missing_scope`|The method requires the scope `post`. Since this scope does not seam to be availble in the app config window you need to provide a legacy token for this to work.
 
 tbd
+

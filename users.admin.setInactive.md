@@ -18,7 +18,6 @@ You will receive a standard Slack API response in JSON as described [here](https
 	"ok": true
 }
 ```
-
 ## Errors & Warnings
 Error|Description
 --------|-------

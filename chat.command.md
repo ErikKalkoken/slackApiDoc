@@ -4,7 +4,7 @@ This method has the URL `https://slack.com/api/chat.command` and follows the [Sl
 
 Argument|Example|Required|Description
 --------|-------|--------|-----------
-`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
+`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: `post`)
 `channel`|`C12345678`|Required|ID of the public channel to execute the command in
 `command`|`/who`|Required|Slash command to be executed. Leading backslash is required.
 `text`|`xxxx-xxxxxxxxx-xxxx`|Optional|Additional parameters provided to the slash command
@@ -25,4 +25,7 @@ In case of errors you will receive a standard Slack API response in JSON as desc
 
 Error|Description
 --------|-------
-tbd|tbd
+`missing_scope`|The method requires the scope `post`. Since this scope does not seam to be availble in the app config window you need to provide a legacy token for this to work.
+
+tbd
+

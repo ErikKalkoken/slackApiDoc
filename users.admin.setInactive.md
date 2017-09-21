@@ -8,7 +8,7 @@ This method has the URL `https://slack.com/api/users.admin.setInactive` and foll
 
 Argument|Example|Required|Description
 --------|-------|--------|-----------
-token|xxxx-xxxxxxxxx-xxxx|Required|Authentication token (Requires scope: ??)
+token|xxxx-xxxxxxxxx-xxxx|Required|Authentication token (Requires scope: client)
 user|U1234567890|Required|ID of the user to be disabled
 
 ## Response

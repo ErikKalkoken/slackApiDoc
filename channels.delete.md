@@ -2,7 +2,7 @@
 This method deletes a public channel
 
 ## Arguments
-This method has the URL `https://slack.com/api/users.admin.invite` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
+This method has the URL `https://slack.com/api/channels.delete` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description
 --------|-------|--------|-----------

@@ -1,5 +1,7 @@
 # chat.command
 This method executes a slash command in a public channel.
+
+## Arguments
 This method has the URL `https://slack.com/api/chat.command` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description

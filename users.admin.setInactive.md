@@ -3,7 +3,6 @@ This method disables a user. A disabled user can no longer log into a Slack team
 Note: This method does not work on free tier.
 
 ## Arguments
-
 This method has the URL `https://slack.com/api/users.admin.setInactive` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description

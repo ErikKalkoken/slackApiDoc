@@ -1,5 +1,7 @@
 # files.edit
 This method changes the properties of a file object
+
+## Arguments
 This method has the URL `https://slack.com/api/files.edit` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 
 Argument|Example|Required|Description

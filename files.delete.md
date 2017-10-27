@@ -1,5 +1,6 @@
 # files.delete
 This method deletes a file
+
 ## Arguments
 This method has the URL `https://slack.com/api/files.delete` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 

@@ -64,4 +64,4 @@ In case of errors you will receive a standard Slack API response in JSON as desc
 ## Errors & Warnings
 Error|Description
 --------|-------
-tbd
+invalid_user|This method can not be used for deleted users

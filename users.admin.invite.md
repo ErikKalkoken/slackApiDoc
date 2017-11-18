@@ -14,6 +14,7 @@ last_name|Doe|Optional|Prefilled input for the "Last name" field on the "new use
 resend|true|Optional|Resend the invitation email if the user has already been invited and the email was sent some time ago.
 restricted|true|Optional|Invite a guest that can use multiple channels
 ultra_restricted|true|Optional|Invite a guest that can use one channel only
+expiration_ts|1510863690|Optional|Set the expiration timestamp for which the account will automatically be removed
 
 ## Response
 You will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). For example if successful you get:

@@ -24,6 +24,10 @@ You will receive a standard Slack API response in JSON as described [here](https
 "ok": true
 }
 ```
+
+In current version, response is returned as JSON response string, so be careful to use some kind of string parser.
+(Example: For Javascript, JSON.parse function)
+
 ## Errors & Warnings
 Error|Description
 --------|-------

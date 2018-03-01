@@ -35,4 +35,5 @@ Error|Description
 `missing_scope`|Using an access_token not authorized for `'client'` scope
 `invalid_email`|Invalid email address (e.g. "qwe"). Note that Slack does not recognize some email addresses even though they are technically valid. This is a known issue.
 `not_allowed`|When SSO is enabeld this method can not be used to invite new users except guests. The [SCIM API](https://api.slack.com/scim) needs to be used instead to invite new users. For inviting guests the `restricted` or `ultra_restricted` property needs to be provided
+`not_allowed_token_type`|Token type is invalid. Workspace tokens do not seem to be compatible with this method
 tbd

@@ -11,6 +11,11 @@ Argument|Example|Required|Description
 `command`|`/who`|Required|Slash command to be executed. Leading backslash is required.
 `text`|`xxxx-xxxxxxxxx-xxxx`|Optional|Additional parameters provided to the slash command
 
+Example usage with [curl](https://curl.haxx.se/) and the [Slack GitHub app](https://slack.github.com/):
+
+    curl --silent --request GET \
+    'https://slack.com/api/chat.command?token=123&channel=CHANNEL_ID&command=/github&text=subscribe%20owner/repo%20branches'
+
 ## Response
 You will receive a response in JSON indicating if the command has been executed successfully or not with the `ok` variable. 
 For some internal commands (e.g. `/who`) the response of the slash command will be provided in the `response` variable. For most slash commands  the response will instead be produced in the channel on Slack.

@@ -7,6 +7,8 @@ Please note that Slack states in its [API Terms of Service](https://slack.com/te
 
 This documentation is provided as public domain. Any help in keeping this document up-to-date and as complete and accurate as possible is very welcome. 
 
+API methods that are only available via the web UI / require a runtime token are out of scope of this github.
+
 Slack and the Slack API is owned by Slack Technologies, Inc. All rights reserved.
 
 

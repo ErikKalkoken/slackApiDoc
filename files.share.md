@@ -6,7 +6,7 @@ This method has the URL `https://slack.com/api/files.share` and follows the [Sla
 
 Argument|Example|Required|Description
 --------|-------|--------|-----------
-`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Authentication token (Requires scope: ??)
+`token`|`xxxx-xxxxxxxxx-xxxx`|Required|Legacy token (requires scopes: `post`)
 `file`|`F12345678`|Required|ID of the file to be edited
 `channel`|`C12345678`|Required|ID of channel to share the file in. Works with both public (channel ID) and private channels (group ID)
 

@@ -1,0 +1,36 @@
+# users.admin.setInactive
+This method enables a deactived user as a single channel guest. The user will now be able to login to the Slack team again as a single channel guest.
+
+Note: This method does not work on free tier. Note that you need a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) for this method.
+
+## Arguments
+This method has the URL `https://slack.com/api/users.admin.setUltraRestricted` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
+
+Argument|Example|Required|Description
+--------|-------|--------|-----------
+token|xxxx-xxxxxxxxx-xxxx|Required|Authentication token (Requires scope: client)
+user|U1234567890|Required|ID of the user to be enabled and set to a single channel guest
+channel|GBX9TD40K|Required|ID of the channel or group that this single channel guest has access to
+
+
+## Response
+
+You will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). For example if successful you get:
+
+```json
+{
+    "ok":true,
+    "memberships":{
+        "channels":[],
+        "groups":{
+            "GBX9TD40K":"mychannelname"
+        },
+        "more_groups":0
+    }
+}
+```
+## Errors & Warnings
+
+Error|Description
+--------|-------
+paid_only|Error message when used with a free Slack team

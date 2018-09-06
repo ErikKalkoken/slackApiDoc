@@ -17,6 +17,10 @@ restricted|true|Optional|Invite a guest that can use multiple channels
 ultra_restricted|true|Optional|Invite a guest that can use one channel only
 expiration_ts|1510863690|Optional|Set the expiration timestamp for which the account will automatically be removed
 
+## Hints
+- Please make sure to use a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) with this API method. It will not work with any other token type.
+- Sending an invite to an email address will only work once. Additional requests to the same email address will be ignored. However, if the invite is still pending you can remove it (through the admin interface) and sent another one.
+
 ## Response
 You will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). For example if successful you get:
 

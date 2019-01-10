@@ -15,7 +15,7 @@ last_name|Doe|Optional|Prefilled input for the "Last name" field on the "new use
 resend|true|Optional|Resend the invitation email if the user has already been invited and the email was sent some time ago.
 restricted|true|Optional|Invite a guest that can use multiple channels
 ultra_restricted|true|Optional|Invite a guest that can use one channel only
-expiration_ts|1510863690|Optional|Set the expiration timestamp for which the account will automatically be removed
+expiration_ts|1510863690|Optional|Set the expiration timestamp for when the guest account will automatically be disabled
 
 ## Hints
 - Please make sure to use a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) with this API method. It will not work with any other token type.
@@ -32,14 +32,17 @@ You will receive a standard Slack API response in JSON as described [here](https
 ## Errors & Warnings
 Error|Description
 --------|-------
-`already_invited`|User has already received an email invitation
 `already_in_team`|User is already part of the team
+`already_invited`|User has already received an email invitation
 `channel_not_found`|Provided channel ID does not match a real channel
-`sent_recently`|When using resend=true, the email has been sent recently already
-`user_disabled`|User account has been deactivated
-`missing_scope`|Using an access_token not authorized for `'client'` scope
+`expiration_requires_restricted` | `expiration_ts` can only be used with guest accounts
 `invalid_email`|Invalid email address (e.g. "qwe"). Note that Slack does not recognize some email addresses even though they are technically valid. This is a known issue.
-`not_allowed`|When SSO is enabeld this method can not be used to invite new users except guests. The [SCIM API](https://api.slack.com/scim) needs to be used instead to invite new users. For inviting guests the `restricted` or `ultra_restricted` property needs to be provided
+`invite_limit_reached`|The maximum number of invites is reached
+`missing_scope`|Using an access_token not authorized for `'client'` scope. Note that you need a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) for this API method.
+`not_allowed`|When SSO is enabeld this method can not be used to invite new users except guests. The [SCIM API](https://api.slack.com/scim) needs to be used instead to invite new users. For inviting guests the `restricted` or 
 `not_allowed_token_type`|Token type is invalid. Workspace tokens do not seem to be compatible with this method
-`requires_one_channel`| When ultra_restricted is true and no channel is provided. A single channel must be provided.
 `not_authed`| 	No authentication token provided.
+`requires_one_channel`| When ultra_restricted is true and no channel is provided. A single channel must be provided.
+`sent_recently`|When using resend=true, the email has been sent recently already
+`ultra_restricted`| property needs to be provided
+`user_disabled`|User account has been deactivated

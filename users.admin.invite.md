@@ -34,6 +34,7 @@ Error|Description
 --------|-------
 `already_in_team`|User is already part of the team
 `already_invited`|User has already received an email invitation
+`already_in_team_invited_user`|User is already part of the team (?? - more info needed on when this error occurs)
 `channel_not_found`|Provided channel ID does not match a real channel
 `expiration_requires_restricted` | `expiration_ts` can only be used with guest accounts
 `invalid_email`|Invalid email address (e.g. "qwe"). Note that Slack does not recognize some email addresses even though they are technically valid. This is a known issue.

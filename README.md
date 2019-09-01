@@ -1,6 +1,8 @@
 # slackApiDoc
 An unofficial documentation of "undocumented" Slack API methods.
 
+![GitHub](https://img.shields.io/github/license/ErikKalkoken/slackApiDoc) ![GitHub contributors](https://img.shields.io/github/contributors/ErikKalkoken/slackApiDoc) ![Badge](https://img.shields.io/badge/-Help%20Wanted-brightgreen) 
+
 ## Purpose
 Slack has a great web API which is documented [here](https://api.slack.com/web). In addition there are a couple of so called "undocumented" methods. These methods provide some additional and very useful functionality that is not available with the official set of API methods. The purpose of this document is to provide an up-to-date documentation to anyone who wants to use these methods.
 

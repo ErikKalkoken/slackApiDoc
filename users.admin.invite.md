@@ -19,6 +19,8 @@ expiration_ts|1510863690|Optional|Set the expiration timestamp for when the gues
 ## Hints
 - Please make sure to use a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) with this API method. It will not work with any other token type.
 - Sending an invite to an email address will only work once. Additional requests to the same email address will be ignored. However, if the invite is still pending you can remove it (through the admin interface) and sent another one.
+- using a + in the email address will result in an email format error
+- using dots in the email is a good way to repeatedly test. Gmail treats dots as non-existent, but slack doesn't recognize them as the same address, so you can use john.doe@gmail.com, j.ohn.doe@gmail.com etc.
 
 ## Response
 You will receive a standard Slack API response in JSON as described [here](https://api.slack.com/web#basics). For example if successful you get:

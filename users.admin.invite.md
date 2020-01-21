@@ -39,7 +39,7 @@ Error|Description
 `invalid_email`|Invalid email address (e.g. "qwe"). Note that Slack does not recognize some email addresses even though they are technically valid. This is a known issue.
 `invite_limit_reached`|The maximum number of invites is reached
 `missing_scope`|Using an access_token not authorized for `'client'` scope. Note that you need a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) for this API method.
-`not_allowed`|When SSO is enabeld this method can not be used to invite new users except guests. The [SCIM API](https://api.slack.com/scim) needs to be used instead to invite new users. For inviting guests the `restricted` or 
+`not_allowed`|When SSO is enabled this method can not be used to invite new users except guests. The [SCIM API](https://api.slack.com/scim) needs to be used instead to invite new users. For inviting guests the `restricted` or 
 `not_allowed_token_type`|Token type is invalid. Workspace tokens do not seem to be compatible with this method
 `not_authed`| 	No authentication token provided.
 `requires_one_channel`| When ultra_restricted is true and no channel is provided. A single channel must be provided.

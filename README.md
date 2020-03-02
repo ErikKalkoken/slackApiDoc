@@ -6,6 +6,8 @@ An unofficial documentation of "undocumented" Slack API methods.
 ## Purpose
 Slack has a great web API which is documented [here](https://api.slack.com/web). In addition there are a couple of so called "undocumented" methods. These methods provide some additional and very useful functionality that is not available with the official set of API methods. The purpose of this document is to provide an up-to-date documentation to anyone who wants to use these methods.
 
+> **IMPORTANT UPDATE**: Slack has decided to remove legacy tokens from their API. It will no longer be possible to create new legacy tokens as of May 5th, 2020 ([Source](https://api.slack.com/changelog/2020-02-legacy-test-token-creation-to-retire)). If you have a working legacy token you should be able to continue using the undocumented API methods, but new users will not. Please take this into consideration when deciding about using any of the methods from this repo in your apps.
+
 ## Disclaimer
 Please note that Slack explicitely states in its [API Terms of Service](https://slack.com/terms-of-service/api) that all undocumented methods "may change at any time, you should not rely on these behaviors.". So use them at your own risk.
 

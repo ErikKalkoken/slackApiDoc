@@ -2,6 +2,10 @@
 This method disables a user. A disabled user can no longer log into a Slack team.
 Note: This method does not work on free tier. Note that you need a [legacy token](https://api.slack.com/custom-integrations/legacy-tokens) for this method.
 
+Note: Slack supports an [SCIM API](https://api.slack.com/scim#patch-users-id)
+that supports disabling and enabling a user. Note that a [paid plan is
+required](https://api.slack.com/scim) to use this interface.
+
 ## Arguments
 This method has the URL `https://slack.com/api/users.admin.setInactive` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).
 

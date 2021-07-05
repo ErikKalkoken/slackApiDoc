@@ -1,5 +1,6 @@
 # team.prefs.get
 This method returns the preferences set for the workspace(team) of the provided token.
+This method requires workspace level app and token.
 
 ## Arguments
 This method has the URL `https://slack.com/api/team.prefs.get` and follows the [Slack Web API calling conventions](https://api.slack.com/web#basics).

@@ -26,6 +26,6 @@ In case of errors you will receive a standard Slack API response in JSON as desc
 ## Errors & Warnings
 Error|Description
 --------|-------
-`missing_scope`|The method requires the scope `post`. Since this scope does not seam to be availble in the app config window you need to provide a legacy token for this to work.
+`missing_scope`|The method requires the scope `post`. Since this scope does not seem to be availble in the app config window you need to provide a legacy token for this to work.
 
 tbd
